@@ -36,7 +36,7 @@
                     <div class="col-sm-12">
                         <div class="checkbox">
                             <label><input type="checkbox" ng-model="selectAll" ng-change="toggleSelectAll()" ng-disabled="!todoList.length"> Select All</label>
-                            <button type="button" class="btn btn-danger pull-right" ng-click="deleteSelected()">Delete Selected</button>
+                            <button type="button" class="btn btn-danger pull-right" ng-click="deleteSelected()" ng-disabled="!todoList.length">Delete Selected</button>
                         </div>
                     </div>
                 </div>
